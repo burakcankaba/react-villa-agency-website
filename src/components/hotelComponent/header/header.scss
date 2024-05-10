@@ -1,0 +1,227 @@
+.headerTransfer {
+
+    color: White;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: #003580;
+    .headerContainer {
+        width: 100%;
+        max-width: 1024px;
+        margin: 20px 0px 100px 0px;
+    }
+    
+    .headerList {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .headerListItem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    
+        svg {
+            font-size: 20px;
+        }
+    
+        a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+    }
+    
+    .headerListItem>a {
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+    
+    .headerListItem>a.active {
+        border: 1px solid white;
+    }
+    
+    .headerTitle {
+        padding-top: 25px;
+    }
+    
+    .headerDesc {
+        margin: 20px 0px;
+    
+    }
+    
+    .headerBtn {
+        color: white;
+        background-color: #0454c5;
+        font-weight: 500;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    
+    .headerSearch {
+        background-color: #fff;
+        border: 3px solid #fbaf40;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        position: absolute;
+        bottom: -25px;
+        width: 100%;
+        max-width: 1024px;
+    
+    }
+    
+    .headerIcon {
+        color: #fbaf40;
+        height: 20px;
+    }
+    
+    .headerSearchItem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        position: relative;
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    .headerSearchItem.hdrSearchBtn {
+        padding: 0;
+        width: 115px;
+    }
+    
+    .headerSearchItem.hdrSearchBtn>button {
+        height: 47px;
+        border: none;
+        background: #003580;
+        padding: 0 30px;
+        color: white;
+        font-size: 14px;
+        border-radius: 0 3px 3px 0;
+    }
+    .headerSearchInput {
+        border: none;
+        outline: none;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        color: #003580;
+    
+    }
+    
+    .headerSearchInput::placeholder {
+        color: #003580;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .headerSearchText {
+        color: #003580;
+        cursor: pointer;
+    }
+    
+    .headerSearchItem .date {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        z-index: 2;
+    }
+    
+    .options {
+    
+        position: absolute;
+        top: 40px;
+        background-color: white;
+        color: gray;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+        z-index: 2;
+    
+    }
+    
+    .optionItem {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    
+    .optionCounter {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+        color: black;
+    }
+    
+    .optionCounterButton {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .optionCounterButton:disabled {
+        cursor: not-allowed;
+    } 
+    .headerSearchItem {
+        label {
+            color: #003580;
+            width: 100%;
+        }
+    
+        position:relative;
+    
+    
+        select,
+        input {
+            width: 100%;
+            font-family: 'Poppins', sans-serif !important;
+            border: none;
+            color: #003580;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    
+        .openDestModal.opened {
+            top: 50px;
+            left: 0;
+        }
+        
+        .openDestModal {
+            position: absolute;
+            top: 50px;
+            left: -3000px;
+            background: white;
+            color: #003580;
+            width: 100%;
+            box-shadow: 0px 0 3px 0px #c9d8ef;
+            transition: .3s;
+            border-radius: 8px;
+            z-index: 9;
+            >div {
+                padding: 8px 15px;
+                cursor: pointer;
+                transition: 0.3s;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                &:not(:last-child){
+                    border-bottom:1px dashed #003580; 
+                }
+                &:hover {
+                    background: #003580;
+                    color: white;
+                }
+            }
+    
+        }
+    }
+}
+

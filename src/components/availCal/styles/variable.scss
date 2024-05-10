@@ -1,0 +1,16 @@
+@use "sass:map";
+
+$chooseColors: (
+    "full": #c4c4c4,
+    "chosen": #003580,
+    "checkInRange": #edf2ff,
+    "notActive": #f2f2f2,
+    "payment": #fbb44c,
+    "checkInOut": #fbb44c,
+);
+
+$priceColor: #fbb44c;
+
+@function getChooseColor($name) {
+    @return map.get($chooseColors, $name);
+}

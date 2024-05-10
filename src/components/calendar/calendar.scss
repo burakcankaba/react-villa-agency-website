@@ -1,0 +1,229 @@
+.talaCalendar {
+    text-align: -webkit-center;
+
+    .tc_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .tc_navigator {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            svg {
+                padding: 5px;
+                background: #003580;
+                border-radius: 3px;
+                color: #ffffff;
+                cursor: pointer;
+            }
+        }
+
+        .tc_navigator.disable {
+            pointer-events: none;
+
+            svg {
+                background: #4c8fee;
+                border-radius: 3px;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .tc_months {
+        display: flex;
+        flex-wrap: wrap;
+
+        .tc_wrap {
+            width: calc(50% - 20px);
+            padding: 10px;
+            .tc_currentDate{
+                font-weight: 500;
+                margin-bottom:10px;
+                color:#003580;
+            }
+            .tc_dayNames {
+                >ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #ffab003d;
+                    margin-bottom: 10px;
+
+                    >li {
+                        font-weight: 500;
+                        cursor: default;
+                        color: #003580;
+                        width: calc(calc(100% / 7) - 4px);
+                        font-size: 13px;
+                        margin: 2px;
+                    }
+                }
+            }
+
+            .tc_days {
+                >ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    text-align: center;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+
+                    >li.inactive {
+                        visibility: hidden;
+
+                        >div {
+                            display: none;
+                        }
+                    }
+
+                    >li.today {
+                        color: white;
+
+                        >label {
+                            background: #003580 !important;
+                        }
+
+
+                        >span {
+                            display: none;
+                        }
+                    }
+
+                    >li.pastDay {
+                        >div {
+                            display: none;
+                        }
+
+                        >label {
+                            color: #b7b7b7;
+                            background: repeating-linear-gradient(-45deg, white, white 3px, #ebf0f7 3px, #ebf0f7 4px) !important;
+
+                        }
+
+                        >span {
+                            display: none;
+                        }
+                    }
+
+                    >li.bookedDay {
+                        >div {
+                            display: none;
+                        }
+
+                        >label {
+                            background: #ffab00;
+                        }
+                    }
+
+                    >li.checkinDay {
+
+                        >label {
+                            background-image: -webkit-linear-gradient(135deg, #ffab00 50%, #ebf0f7 50%);
+                        }
+                    }
+
+                    >li.checkoutDay {
+
+                        >label {
+                            background-image: -webkit-linear-gradient(315deg, #ffab00 50%, #ebf0f7 50%)
+                        }
+                    }
+
+                    >li {
+                        z-index: 1;
+                        cursor: pointer;
+                        position: relative;
+                        margin-top: 30px;
+                        color: #333;
+                        width: calc(calc(100% / 7) - 4px);
+                        font-size: 13px;
+                        margin: 2px;
+                        text-align: center;
+                        background: #ebf0f7;
+                        color: #003580;
+                        position: relative;
+
+                        >span.checkin_text {
+                            position: absolute;
+                            z-index: 5;
+                            bottom: 0;
+                            font-size: 9px;
+                            right: 1px;
+                            text-align: center;
+                        }
+
+                        >span.checkout_text {
+                            position: absolute;
+                            z-index: 5;
+                            top: 0;
+                            font-size: 9px;
+                            left: 2px;
+                            text-align: center;
+                        }
+
+                        >div {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            font-size: 12px;
+                        }
+                    }
+
+                    label {
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.calendarInfo {
+    >ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        >li {
+            font-size: 13px;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 2px;
+            font-weight: 500;
+        }
+
+        >li.today {
+            background: #094dad;
+        }
+
+        >li.checkinDay {
+            background-image: -webkit-linear-gradient(122deg, #fbaf40 50%, #ebf0f7 50%);
+            color: #003580;
+        }
+
+        >li.checkoutDay {
+            background-image: -webkit-linear-gradient(303deg, #fbaf40 50%, #ebf0f7 50%);
+            color: #003580;
+        }
+
+        >li.booked {
+            background: #fbaf40;
+        }
+
+        >li.available {
+            color: #003580;
+            background: #ebf0f7;
+        }
+
+    }
+}

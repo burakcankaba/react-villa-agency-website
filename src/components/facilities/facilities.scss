@@ -1,0 +1,38 @@
+.vd_facitiliesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    .vd_facItem{
+        width: calc(100% / 3);
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        font-size: 14px;
+        svg{
+            padding: 5px;
+            
+            border-radius: 5px;
+            font-size: 20px;
+            color: #ffffff;
+            background: #fbb44c;
+        }
+    }
+}
+///RTL
+body[dir="rtl"]{
+    .vd_facitiliesContainer{
+        .vd_facItem{
+            svg{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+body[dir="ltr"]{
+    .vd_facitiliesContainer{
+        .vd_facItem{
+            svg{
+                margin-right: 5px;
+            }
+        }
+    }
+}

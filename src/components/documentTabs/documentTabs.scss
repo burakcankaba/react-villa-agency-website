@@ -1,0 +1,33 @@
+.documentTabs{
+    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+        text-transform: capitalize !important;
+        color: black !important;
+    }
+    .css-35zqo5-MuiTabs-root{
+        width: 400px;
+    }
+    .Mui-selected.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+        color: #ffab00 !important;
+    }
+    
+    .css-10d9dml-MuiTabs-indicator {
+        background-color: #ffab00 !important;
+    }
+    [role="tabpanel"]{
+        width:100%;
+    }
+    
+    
+    
+}
+body[dir="rtl"] {
+    .css-35zqo5-MuiTabs-root {
+        border-left: 1px solid rgba(0, 0, 0, 0.12) !important;
+        border-right: none;
+    }
+
+    .css-10d9dml-MuiTabs-indicator {
+        right:unset !important;
+        left:0 !important;
+    }
+}

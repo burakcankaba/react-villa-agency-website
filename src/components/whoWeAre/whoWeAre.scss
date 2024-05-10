@@ -1,0 +1,19 @@
+.whoWeAre {
+    
+    .wwa_Container {
+        padding-top:20px;
+        display: flex;
+        max-width: 1024px;
+        font-size: 14px;
+        gap:20px;
+        >div{
+            width:50%;
+        }
+        .wwa_c_left{
+            
+            line-height: 25px;
+        }
+        
+    }
+
+}

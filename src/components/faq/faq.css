@@ -1,0 +1,51 @@
+.faqAccordions{
+    display:flex;
+    max-width: 1024px;
+    font-size:14px;
+}
+.faqAccordions .MuiAccordionSummary-contentGutters{
+    margin:8px 0 !important;
+}
+.faqAccordions svg{
+    font-size:20px;
+}
+.faqAccordion.Mui-expanded{
+    border: 2px solid #fbaf40!important;
+
+}
+.faqAccordion.Mui-expanded svg{
+    color: #fbaf40!important;
+
+}
+.faqAccordion.Mui-expanded .faqAccordionTitle{
+    color:#fbaf40 !important;
+}
+
+.faqAccordionsLeft,.faqAccordionsRight{
+    width:50%;
+    padding:10px;
+}
+.faqAccordion{
+    margin: 10px 0;
+    
+    box-shadow: none !important;
+    border-radius: 8px !important;
+    border: 1px solid #e2e2e2 !important;
+    color: #363636;
+    transition:.3s;
+}
+.faqAccordion::before{
+    display:none;
+}
+.faqAccordionSum{
+    min-height: 40px !important;
+}
+.faqAccordionTitle{
+    font-size:14px !important;
+    font-weight: 500 !important;
+    transition:.3s;
+}
+.faqAccordionDesc{
+    font-size: 13px !important; 
+    font-weight: 400 !important;
+}

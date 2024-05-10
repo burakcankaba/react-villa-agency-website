@@ -1,0 +1,70 @@
+button,
+label {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    width: 200px;
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        background: transparent;
+        border: 0;
+        color: #003580;
+        font-size: 14px;
+        font-weight: 500;
+        
+    }
+
+
+
+    .menu {
+        position: absolute;
+        top: 35px;
+        overflow: hidden;
+        width: 100%;
+        display: grid;
+        visibility: hidden;
+        opacity: 0;
+        translate: 0 20px;
+        transition: 0.3s;
+        z-index: 2;
+        background: #fbaf40;
+        border-radius: 0 0 5px 5px;
+
+        >label {
+            display: flex;
+            gap: 6px;
+            padding: 7px 10px;
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: 400;
+            border-bottom: 1px dashed #003580;
+
+            &:hover {
+                background: #003580;
+            }
+
+            input {
+                accent-color: #003580;
+            }
+        }
+    }
+
+    .menu.open {
+        visibility: visible;
+        opacity: 1;
+        translate: 0 0;
+    }
+
+    .placeholder {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

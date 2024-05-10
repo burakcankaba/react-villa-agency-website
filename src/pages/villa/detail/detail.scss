@@ -1,0 +1,169 @@
+.villaDetail {
+    padding-top: 20px;
+    background: #f3f3f3;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        height: 20px;
+        width: 20px;
+        background: rgb(255 255 255 / 78%);
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .vd_calendar {
+        padding: 15px 0;
+    }
+
+    .vd_titleH2 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .villaInfoContainer {
+        max-width: 1100px;
+        margin: 0 auto;
+
+
+        .villaInfos {
+
+            padding: 25px;
+            position: relative;
+            margin-top: -20px;
+            z-index: 1;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 1px 0px #c8c8c8;
+
+            .vd_breadcrumbs {
+                font-size: 13px;
+                color: #888888;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button {
+                    background: #003580;
+                    color: white;
+                    padding: 3px 10px;
+                    border-radius: 3px;
+                    box-shadow: 0 0 2px 3px #ed9f00;
+                }
+            }
+
+            .vd_title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                >h1 {
+                    font-size: 25px;
+                    padding: 10px 0;
+                    color: #003580;
+                    font-weight: 600;
+                }
+
+                >label {
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        padding-right: 5px;
+                        font-size: 18px;
+                        color: #ffab00;
+                    }
+
+                    span {
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .vd_container {
+                position: relative;
+
+                .vd_left {
+                    width: 65%;
+
+                    >div {
+                        border-bottom: 1px solid #e8e8e8;
+                        padding: 40px 0;
+                    }
+
+                    .vd_props {
+                        display: flex;
+                        padding: 10px 0;
+
+                        >div {
+                            padding-right: 20px;
+                            display: flex;
+                            align-items: center;
+
+                            svg {
+                                font-size: 22px;
+                                color: #ffab00;
+                            }
+
+                            span {
+                                margin-left: 5px;
+                                font-size: 13px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    .villaInformations {
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .vd_right {
+                    width: calc(35% - 15px);
+                    background: white;
+                    border-radius: 8px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    margin-left: 15px;
+                }
+            }
+
+        }
+    }
+}
+
+.shareVillas {
+    text-align: center;
+    background: #003580;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+
+    h4 {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+
+        li {
+        margin:0 10px;
+           button{
+            svg{
+                width:30px;
+                height:30px;
+            }
+           }
+        }
+    }
+
+}

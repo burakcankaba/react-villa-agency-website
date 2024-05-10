@@ -1,0 +1,51 @@
+.newsLetter{
+    background: #003580;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 0;
+}
+.newsLetter>div{
+    color:white;
+    
+}
+.newsLetter>div>label{
+    font-size:15px;
+    
+}
+
+.newsLetter>input{
+    height:30px;
+    width:230px;
+    
+    border:none;
+    
+    text-indent: 15px;
+}
+.newsLetter>button{
+    background: #fbb44c;
+    height: 32px;
+    border: none;
+    padding: 3px 8px;
+    color: white;
+    font-weight: 600;
+    
+}
+body[dir="ltr"]{
+    .newsLetter>input{
+        border-radius: 3px 0 0 3px;
+        margin-left:20px;
+    }
+    .newsLetter>button{
+        border-radius: 0 3px 3px 0;
+    }
+}
+body[dir="rtl"]{
+    .newsLetter>input{
+        border-radius: 0 3px 3px 0;
+        margin-right:20px;
+    }
+    .newsLetter>button{
+        border-radius: 3px 0 0 3px;
+    }
+}

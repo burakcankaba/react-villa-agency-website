@@ -1,0 +1,43 @@
+.villaMedias {
+    position: relative;
+}
+
+.villaPhotosModal {
+    position: fixed;
+    z-index: 1300;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;background-color: #0000008a;
+    .closePhotosModal {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 100;
+        cursor:pointer;
+        &:hover{
+            svg{
+                color:white;
+            }
+        }
+        svg {
+            color: #ffffffad;
+            font-size:35px;
+            transition:.5s;
+        }
+    }
+
+    .villaPModal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 900px;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 99;
+    }
+
+
+}

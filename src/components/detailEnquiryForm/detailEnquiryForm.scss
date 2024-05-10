@@ -1,0 +1,166 @@
+.detailEnquiryForm {
+    padding: 10px;
+    background: #fbaf40;
+    border-radius: 5px;
+
+    .rdrCalendarWrapper {
+        position: absolute;
+        top: 66px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .rdrDateDisplayWrapper {
+        display: none;
+    }
+
+    .bgAlertBtn {
+        padding: 10px;
+        text-align: center;
+        background: #f45800;
+        width: 100%;
+        color: white;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        svg {
+            font-size: 16px;
+        }
+    }
+
+    .def_item {
+        padding: 15px 10px;
+        border: 1px solid #efefef;
+        margin-bottom: 10px;
+        background: #003580;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        position: relative;
+        cursor: pointer;
+
+        svg {
+            font-size: 20px;
+            color: #fbaf40;
+        }
+
+        .def_text {
+            font-size: 14px;
+        }
+
+        .stick::after {
+            border-right: 1px solid white;
+            height: 30px;
+            width: 1px;
+        }
+
+        .def_itemDate {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            >div {
+                font-size: 13px;
+            }
+        }
+
+    }
+
+    .def_paymentPlan {
+        padding: 6px;
+        font-size: 14px;
+        background: white;
+        border-radius: 4px;
+        margin-top: 10px;
+
+        >div {
+            font-size: 13px;
+            font-weight: 600;
+            padding-top: 5px;
+            text-align: center;
+            color: #003580;
+        }
+
+        >ul {
+            padding: 5px;
+
+            >li {
+                padding: 5px 0;
+                border-bottom: 1px solid #efefef;
+                margin: 5px 0;
+
+                >div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .def_ppTitle {
+                        font-size: 13px;
+                        font-weight: 300;
+                        display: flex;
+                        align-items: center;
+
+                        svg {
+                            padding-right: 3px;
+                            color: #fbaf40;
+                        }
+                    }
+
+                    .def_ppValue {
+                        font-weight: 600;
+                        color: #003580;
+                    }
+
+                    .def_ppValue.oldPrc {
+
+                        color: red;
+                        text-decoration: line-through;
+                    }
+
+                    .def_ppValue.prc {
+                        padding-left: 8px;
+                    }
+
+                    .def_ppValue.discount {
+                        color: #fbaf40;
+                        text-decoration: line-through;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    border-bottom: none;
+                }
+            }
+
+            .def_totalPrice {
+                padding-top: 10px;
+            }
+
+            .def_discountPrice {
+                background: #003580;
+                color: white;
+                padding: 4px 5px;
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .def_sendButton {
+        padding: 10px 0;
+        text-align: center;
+        background: #003580;
+        width: 100%;
+        margin-top: 10px;
+        color: white;
+        border-radius: 4px;
+        display: block;
+        font-size: 14px;
+    }
+}

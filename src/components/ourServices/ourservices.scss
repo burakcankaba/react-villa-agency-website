@@ -1,0 +1,55 @@
+.ourservices {
+    >div {
+        width: calc(100% - 40px);
+        display: flex;
+        z-index: 1;
+        margin: 0 20px;
+        flex-wrap: wrap;
+
+        >div {
+            
+            margin:10px;
+            
+            >a {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 5px;
+                background: #003580;
+                color: white;
+                transition: .5s;
+                position:relative;
+                transition:.5s;
+                 &:hover{
+                    h2{
+                        background:#fbb44c;
+                    }
+                 }
+                >img {
+                    height: 120px;
+                    border-radius: 5px 0 0 5px;
+                }
+
+                >div {
+                    padding: 0 10px;
+                    position:absolute;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    >h2 {
+                        font-size: 13px;
+                        font-weight: 500;
+                        background: white;
+                        color:#003580;
+                        padding:3px;
+                        margin:5px;
+                        text-align: center;
+                        border-radius: 5px;transition:.5s;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}

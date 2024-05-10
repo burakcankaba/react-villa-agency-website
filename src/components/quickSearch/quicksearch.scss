@@ -1,0 +1,120 @@
+.quickSearch {
+    position: relative;
+
+    .navSearchBar {
+        width: 220px;
+        height: 30px;
+        border: 1px solid #fbaf40;
+        border-radius: 6px;
+        box-shadow: none;
+        text-indent: 10px;
+        color: #003580;
+        transition: .3s;
+
+        &::placeholder {
+            color: #003580;
+        }
+
+        &:focus {
+            color: #000;
+            background-color: #fff;
+            border-color: #ffab00 !important;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgb(255 171 0 / 38%);
+        }
+
+
+    }
+
+    >button {
+        position: absolute;
+
+        background: #fbaf40;
+        color: white;
+        border: none;
+        top: 2px;
+        padding: 2px 6px;
+        font-size: 17px;
+        border-radius: 6px;
+
+    }
+
+    .quickSearchResult {
+        position: absolute;
+        top: 36px;
+        background-color: white;
+        z-index: 2;
+        width: 100%;
+        border-radius: 3px;
+        max-height: 275px;
+        transition: 0.5s;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #fbaf40;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        >div {
+            >a {
+                display: flex;
+                padding: 8px;
+                gap: 6px;
+                align-items: center;
+                transition: .5s;
+
+                &:hover {
+                    background: white;
+                }
+
+                >img {
+                    width: 70px;
+                    border-radius: 4px;
+                }
+
+                >div {
+
+                    .itemName {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                    .itemCity {
+                        font-size: 13px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+body[dir="ltr"] {
+    .quickSearch {
+        >button {
+            right: 3px;
+        }
+    }
+}
+
+body[dir="rtl"] {
+    .quickSearch {
+        >button {
+            left: 3px;
+        }
+    }
+}

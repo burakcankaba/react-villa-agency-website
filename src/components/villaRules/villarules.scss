@@ -1,0 +1,38 @@
+.villaRules{
+    >ul{
+        >li{
+            
+            &:not(:last-child){
+                margin-bottom:15px;
+            }
+            
+            >h3{
+                font-size: 15px;
+                font-weight: 500;
+                &::before{
+                    content: "• ";
+                    color: #fbb44c;
+                    padding-left: 10px;
+                    padding-right: 3px;
+                }
+            }
+            >p{
+                font-size: 14px;
+                margin: 4px 0px;
+                
+                >span{
+                    gap:20px;
+                    display:flex;
+                    >span{
+                        display: flex;
+                        align-items: center;
+                        svg{
+                            padding-right: 5px;
+                            color:#003580;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
